@@ -1,6 +1,7 @@
 # Se debe realizar los siguientes comandos al hacer el git clone
-catkin build
-source devel/setup.bash
+$catkin build
+
+$source devel/setup.bash
 
 Lista de reproducción para construir el proyecto
 :
