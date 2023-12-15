@@ -4,5 +4,6 @@ $catkin build
 $source devel/setup.bash
 
 ##Lista de reproducción para construir el proyecto
-:
+
+
 https://www.youtube.com/playlist?list=PLeEzO_sX5H6TBD6EMGgV-qdhzxPY19m12
