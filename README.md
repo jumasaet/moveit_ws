@@ -1,9 +1,9 @@
 # Se debe realizar los siguientes comandos al hacer el git clone
-$catkin build
+catkin build
 
-$source devel/setup.bash
+source devel/setup.bash
 
-##Lista de reproducción para construir el proyecto
+**Lista de reproducción para construir el proyecto**
 
 
 https://www.youtube.com/playlist?list=PLeEzO_sX5H6TBD6EMGgV-qdhzxPY19m12
