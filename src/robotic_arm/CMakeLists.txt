@@ -20,7 +20,6 @@ catkin_package(CATKIN_DEPENDS
 		std_msgs
 	)
 
-
 find_package(roslaunch)
 
 foreach(dir config launch meshes urdf)

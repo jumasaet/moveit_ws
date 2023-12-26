@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find robotic_arm)/urdf.rviz" />
+    args="-d $(find robotic_arm)/config/rviz.rviz" />
 </launch>

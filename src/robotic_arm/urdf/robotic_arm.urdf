@@ -5,13 +5,6 @@
 <robot
   name="robotic_arm">
   
-  <link name="world"/>
-		<joint name="base_joint" type="fixed">
-		<parent link="world"/>
-		<child link="base_link"/>
-		<origin rpy="0 0 0" xyz="0.0 0.0 0.17"/>
-  < /joint>
-
   <link
     name="base_link">
     <inertial>
@@ -52,6 +45,7 @@
       </geometry>
     </collision>
   </link>
+  
   <link
     name="link_1">
     <inertial>
@@ -92,9 +86,10 @@
       </geometry>
     </collision>
   </link>
+  
   <joint
     name="joint_1"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0 0 0.039971"
       rpy="0 0 0" />
@@ -105,8 +100,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.57"
-      upper="1.57"
+      lower="0"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -152,7 +147,7 @@
   </link>
   <joint
     name="joint_2"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0.024 0.019 0.0090292"
       rpy="-1.5708 -0.0070881 0" />
@@ -163,7 +158,7 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.57"
+      lower="0"
       upper="0"
       effort="0"
       velocity="0" />
@@ -210,7 +205,7 @@
   </link>
   <joint
     name="joint_3"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.024 -0.195 -0.019"
       rpy="3.1416 0 0" />
@@ -221,7 +216,7 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-1.57"
+      lower="0"
       upper="0"
       effort="0"
       velocity="0" />
@@ -268,7 +263,7 @@
   </link>
   <joint
     name="joint_4"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0.019 0.024 0"
       rpy="3.1416 1.5656 3.1345" />
@@ -280,7 +275,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -326,7 +321,7 @@
   </link>
   <joint
     name="joint_5"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.00099824 -0.022521 0.20866"
       rpy="-3.1379 -1.5656 3.1416" />
@@ -338,7 +333,7 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
@@ -384,7 +379,7 @@
   </link>
   <joint
     name="joint_6"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="0.01883 0.02412 0"
       rpy="-1.5708 1.5312 -1.5637" />
@@ -396,12 +391,12 @@
       xyz="0 0 1" />
     <limit
       lower="0"
-      upper="1.57"
+      upper="0"
       effort="0"
       velocity="0" />
   </joint>
-
-	<transmission name="link_1_trans">
+  
+  <transmission name="link_1_trans">
 		<type>transmission_interface/SimpleTransmission</type>
 		<joint name="joint_1">
 			<hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>

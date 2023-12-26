@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/juan/moveit_ws/devel/.private/robotic_arm/setup.sh
